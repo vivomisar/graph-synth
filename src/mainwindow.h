@@ -2,14 +2,15 @@
 #define MAINWINDOW_H
 
 #include "soundprocessor.h"
-#include <memory>
+
 class MainWindow
 {
   private:
-	std::unique_ptr<SoundProcessor> s;
+	SoundProcessor sound;
 
   public:
 	MainWindow();
+	void mainLoop();
 	~MainWindow();
 };
 
